@@ -1,0 +1,29 @@
+{
+  "name": "boyyang_tools",
+  "version": "1.1.1",
+  "description": "boyyang_tools",
+  "license": "MIT",
+  "author": "boyyang",
+  "main": "dist/boyyang.umd.js",
+  "models": "dist/boyyang.es.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "dist/boyyang.es.js",
+      "require": "dist/boyyang.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.0",
+    "vite-plugin-dts": "^2.1.0"
+  }
+}
