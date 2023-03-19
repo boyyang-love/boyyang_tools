@@ -26,3 +26,6 @@ console.log(is(testObj)) // object
 * typescripts     ^5.0.2
 * vite-plugin-dts ^2.1.0
 * @types/node     ^18.15.3
+
+#### 版本
+v1.1.1 增加is函数
