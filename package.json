@@ -1,12 +1,13 @@
 {
   "name": "boyyang_tools",
-  "version": "1.1.1",
+  "version": "1.2.5",
+
   "description": "boyyang_tools",
   "license": "MIT",
   "author": "boyyang",
   "main": "dist/boyyang.umd.js",
   "models": "dist/boyyang.es.js",
-  "types": "dist/main.d.ts",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "dist/boyyang.es.js",
@@ -14,7 +15,11 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "package.json",
+    "tsconfig.json",
+    "src",
+    "main.ts"
   ],
   "scripts": {
     "start": "vite",

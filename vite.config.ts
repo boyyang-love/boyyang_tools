@@ -11,7 +11,13 @@ export default defineConfig(({mode, command}: ConfigEnv): UserConfig => {
                 '@': '/src',
             },
         },
-        plugins: [dts()],
+        plugins: [
+            dts(
+                {
+                    copyDtsFiles: true,
+                    insertTypesEntry: true,
+                },
+            )],
         build: {
             target: 'es2019',
             outDir: 'dist',
@@ -22,7 +28,6 @@ export default defineConfig(({mode, command}: ConfigEnv): UserConfig => {
                 name: 'boyyang_tools',
                 formats: ['es', 'umd'],
                 fileName: (format) => `boyyang.${format}.js`,
-
             },
         },
     }
