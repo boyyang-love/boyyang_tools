@@ -14,19 +14,22 @@ export default defineConfig(({mode, command}: ConfigEnv): UserConfig => {
         plugins: [
             dts(
                 {
+                    outputDir: './dist/typings',
                     copyDtsFiles: true,
-                    insertTypesEntry: true,
+                    // staticImport: true,
+                    insertTypesEntry: false,
                 },
-            )],
+            ),
+        ],
         build: {
             target: 'es2019',
             outDir: 'dist',
             emptyOutDir: true,
-            chunkSizeWarningLimit: 2000,
+            chunkSizeWarningLimit: 500,
             lib: {
                 entry: path.resolve(__dirname, 'main.ts'),
                 name: 'boyyang_tools',
-                formats: ['es', 'umd'],
+                formats: ['es', 'umd', 'cjs'],
                 fileName: (format) => `boyyang.${format}.js`,
             },
         },

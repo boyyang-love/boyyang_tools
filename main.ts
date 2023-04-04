@@ -1,2 +1,3 @@
-export { is } from './src/is/index'
-export { createStorage } from './src/storage/index'
+export { is } from './src/core/is/index'
+export { createStorage } from './src/core/storage/index'
+
