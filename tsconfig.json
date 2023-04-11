@@ -8,6 +8,7 @@
     "strict": true,
     "esModuleInterop": true,
     "sourceMap": true,
+    "moduleResolution": "node",
     "declarationDir": "dist",
     "typeRoots": ["dist/types"],
     "baseUrl": "./",
