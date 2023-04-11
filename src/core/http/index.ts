@@ -1,5 +1,5 @@
 import {Http} from './http'
-import {Result} from '@/core/http/types'
+import {Result} from './types'
 import { transForm } from './transform'
 const createHttp = () => {
     const http = new Http(
